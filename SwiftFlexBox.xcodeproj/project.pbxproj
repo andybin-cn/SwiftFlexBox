@@ -112,11 +112,11 @@
 		38C4A5AC228E5B1B0071A8AA /* source */ = {
 			isa = PBXGroup;
 			children = (
-				38C4A5AD228E5B1B0071A8AA /* ImageStyle.swift */,
-				38C4A5AE228E5B1B0071A8AA /* TextStyle.swift */,
 				38C4A5AF228E5B1B0071A8AA /* Flexbox.swift */,
 				38C4A5B0228E5B1B0071A8AA /* ConstraintMaker.swift */,
 				38C4A5B1228E5B1B0071A8AA /* ViewStyle.swift */,
+				38C4A5AE228E5B1B0071A8AA /* TextStyle.swift */,
+				38C4A5AD228E5B1B0071A8AA /* ImageStyle.swift */,
 			);
 			path = source;
 			sourceTree = "<group>";
