@@ -220,15 +220,19 @@ class ConstraintMaker {
                 preAxisConstraintItem = subView.snp.right
                 preAxisSpacing = right
                 
-                switch alignItems {
+                let newAlignItems = subView.style.style(for: .alignSelf)?.value as? StyleAlignItems ?? alignItems
+//                subView.setContentHuggingPriority(UILayoutPriority(300), for: .vertical)
+                switch newAlignItems {
                 case .flexStart:
                     make.top.equalTo(top)
                     make.bottom.lessThanOrEqualToSuperview()
+//                    subView.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .vertical)
                     break
                 case .center:
                     make.centerY.equalTo(currentView.snp.centerY).offset(top - bottom)
                     make.top.greaterThanOrEqualToSuperview()
                     make.bottom.lessThanOrEqualToSuperview()
+                    make.height.equalToSuperview().priority(.high)
                     break
                 case .flexEnd:
                     make.bottom.equalTo(-bottom)
@@ -351,7 +355,8 @@ class ConstraintMaker {
                 preAxisConstraintItem = subView.snp.bottom
                 preAxisSpacing = bottom
                 
-                switch alignItems {
+                let newAlignItems = subView.style.style(for: .alignSelf)?.value as? StyleAlignItems ?? alignItems
+                switch newAlignItems {
                 case .flexStart:
                     make.left.equalTo(left)
                     break

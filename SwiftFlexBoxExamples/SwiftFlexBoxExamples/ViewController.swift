@@ -31,14 +31,19 @@ class ViewController: UIViewController {
         //            UIView(style: [.direction(.column), .left(0), .top(0), .bottom(0), .right(0), .background(.red)])
         //        ]
         self.view <- [
-            UIView(styles: [.position(.absolute), .direction(.row), .justifyContent(.flexStart), .alignItems(.flexStart), .left(0), .top(100), .background(.gray)]) <- [
-                UILabel(styles: [.width(50), .height(50), .top(0),.left(10), .background(.red), .text("测试"),.textAlign(.center)]),
-                UIView(styles: [.width(80), .height(60),.right(20), .top(0), .background(.blue)]),
-                UILabel(styles: [.width(60), .height(80), .top(0),.right(5), .background(.red), .text("测试"),.textAlign(.center)], labelRef: &ref)
+            UIView(styles: [.alignSelf(.center), .direction(.row), .justifyContent(.flexStart), .alignItems(.flexStart), .top(100), .left(0), .background(.gray)]) <- [
+                UILabel(styles: [.height(50), .top(0), .left(10), .background(.red), .text("测试"), .textAlign(.center)]),
+                UIView(styles: [.width(80), .height(60), .right(20), .background(.blue)]),
+                UILabel(styles: [.width(60), .height(80), .right(5), .background(.red), .text("测试"),.textAlign(.center)])
+            ],
+            UIView(styles: [.alignSelf(.flexEnd), .direction(.row), .justifyContent(.flexStart), .alignItems(.flexStart), .top(100), .left(0), .background(.gray)]) <- [
+                UILabel(styles: [.height(50), .top(0), .left(10), .background(.red), .text("测试"), .textAlign(.center)]),
+                UIView(styles: [.width(80), .height(60), .right(20), .background(.blue)]),
+                UILabel(styles: [.width(60), .height(80), .right(5), .background(.red), .text("测试"),.textAlign(.center)])
             ]
         ]
         
-        print("ref.text:\(String(describing: ref.text))")
+//        print("ref.text:\(String(describing: ref.text))")
     }
 
 
