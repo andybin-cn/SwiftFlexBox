@@ -103,12 +103,12 @@ class ConstraintMaker {
         currentView.addSubview(view)
         view.snp.makeConstraints { (make) in
             if direction == .row {
-                view.setContentHuggingPriority(UILayoutPriority(rawValue: 0), for: .horizontal)
+                view.setContentHuggingPriority(UILayoutPriority(rawValue: 200), for: .horizontal)
                 make.left.equalTo(preAxisConstraintItem)
                 make.centerY.equalToSuperview()
                 make.height.equalTo(0)
             } else {
-                view.setContentHuggingPriority(UILayoutPriority(rawValue: 0), for: .vertical)
+                view.setContentHuggingPriority(UILayoutPriority(rawValue: 200), for: .vertical)
                 make.top.equalTo(preAxisConstraintItem)
                 make.centerX.equalToSuperview()
                 make.width.equalTo(0)
@@ -173,7 +173,7 @@ class ConstraintMaker {
                     make.left.equalTo(newSpacingView.snp.right).offset(left + preAxisSpacing)
                     
                     if isFirstOne {
-                        newSpacingView.setContentHuggingPriority(UILayoutPriority(rawValue: 1), for: .horizontal)
+                        newSpacingView.setContentHuggingPriority(UILayoutPriority(rawValue: 201), for: .horizontal)
                     }
                     if let preSpacingView = preSpacingView, index > 1 {
                         newSpacingView.snp.makeConstraints({ (make) in
@@ -183,7 +183,7 @@ class ConstraintMaker {
                     
                     if isLastOne {
                         let endSpacingView = ConstraintMaker.makeSpaceingView(currentView: currentView, preAxisConstraintItem: subView.snp.right, direction: direction)
-                        endSpacingView.setContentHuggingPriority(UILayoutPriority(rawValue: 1), for: .horizontal)
+                        endSpacingView.setContentHuggingPriority(UILayoutPriority(rawValue: 201), for: .horizontal)
                         endSpacingView.snp.makeConstraints({ (make) in
                             make.right.equalToSuperview()
                             if isFirstOne {
@@ -221,26 +221,29 @@ class ConstraintMaker {
                 preAxisSpacing = right
                 
                 let newAlignItems = subView.style.style(for: .alignSelf)?.value as? StyleAlignItems ?? alignItems
-                make.height.equalToSuperview().priority(700)
                 switch newAlignItems {
                 case .flexStart:
                     make.top.equalTo(top)
-                    make.bottom.lessThanOrEqualToSuperview()
+                    make.bottom.lessThanOrEqualToSuperview().inset(bottom)
+                    make.bottom.equalToSuperview().inset(bottom).priority(700)
                     break
                 case .center:
                     make.centerY.equalTo(currentView.snp.centerY).offset(top - bottom)
-                    make.top.greaterThanOrEqualToSuperview()
-                    make.bottom.lessThanOrEqualToSuperview()
+                    make.height.lessThanOrEqualToSuperview().inset(top + bottom)
+                    make.height.equalToSuperview().inset(top + bottom).priority(700)
                     break
                 case .flexEnd:
                     make.bottom.equalTo(-bottom)
+                    make.top.greaterThanOrEqualToSuperview().offset(top)
+                    make.top.equalToSuperview().offset(top).priority(700)
                     break
                 case .baseline:
                     make.top.greaterThanOrEqualToSuperview()
                     if !isFirstOne {
                         make.lastBaseline.equalTo(subViews[index-1].snp.lastBaseline)
                     }
-                    make.bottom.lessThanOrEqualToSuperview()
+                    make.bottom.lessThanOrEqualToSuperview().inset(bottom)
+                    make.bottom.equalToSuperview().inset(bottom).priority(700)
                     break
                 case .stretch:
                     make.top.equalTo(top)
@@ -272,11 +275,13 @@ class ConstraintMaker {
                     make.top.equalTo(preAxisConstraintItem).offset(top + preAxisSpacing)
                     if isLastOne {
                         make.bottom.lessThanOrEqualTo(endAxisConstraintItem).offset(-bottom)
+                        make.bottom.equalToSuperview().offset(-bottom).priority(700)
                     }
                     break
                 case .flexEnd:
                     if isFirstOne {
                         make.top.greaterThanOrEqualTo(preAxisConstraintItem).offset(top + preAxisSpacing)
+                        make.top.equalTo(preAxisConstraintItem).offset(top + preAxisSpacing).priority(700)
                     } else {
                         make.top.equalTo(preAxisConstraintItem).offset(top + preAxisSpacing)
                     }
@@ -306,7 +311,7 @@ class ConstraintMaker {
                     make.top.equalTo(newSpacingView.snp.bottom).offset(top + preAxisSpacing)
                     
                     if isFirstOne {
-                        newSpacingView.setContentHuggingPriority(UILayoutPriority(rawValue: 1), for: .vertical)
+                        newSpacingView.setContentHuggingPriority(UILayoutPriority(rawValue: 201), for: .vertical)
                     }
                     if let preSpacingView = preSpacingView, index > 1 {
                         newSpacingView.snp.makeConstraints({ (make) in
@@ -316,7 +321,7 @@ class ConstraintMaker {
                     
                     if isLastOne {
                         let endSpacingView = ConstraintMaker.makeSpaceingView(currentView: currentView, preAxisConstraintItem: subView.snp.bottom, direction: direction)
-                        endSpacingView.setContentHuggingPriority(UILayoutPriority(rawValue: 1), for: .vertical)
+                        endSpacingView.setContentHuggingPriority(UILayoutPriority(rawValue: 201), for: .vertical)
                         endSpacingView.snp.makeConstraints({ (make) in
                             make.bottom.equalToSuperview()
                             if isFirstOne {
@@ -354,23 +359,31 @@ class ConstraintMaker {
                 preAxisSpacing = bottom
                 
                 let newAlignItems = subView.style.style(for: .alignSelf)?.value as? StyleAlignItems ?? alignItems
-                make.width.equalToSuperview().priority(700)
                 switch newAlignItems {
                 case .flexStart:
                     make.left.equalTo(left)
+                    make.right.equalToSuperview().inset(right).priority(700)
+                    make.right.lessThanOrEqualToSuperview().inset(right)
                     break
                 case .center:
                     make.centerX.equalTo(currentView.snp.centerX).offset(left - right)
+                    make.width.equalToSuperview().inset(left + right).priority(700)
+                    make.width.lessThanOrEqualToSuperview().inset(left + right)
                     break
                 case .flexEnd:
                     make.right.equalTo(-right)
+                    make.left.equalToSuperview().offset(left).priority(700)
+                    make.left.greaterThanOrEqualToSuperview().inset(left)
                     break
                 case .baseline:
                     make.centerX.equalTo(currentView.snp.centerX).offset(left - right)
+                    make.width.equalToSuperview().inset(left + right).priority(700)
+                    make.width.lessThanOrEqualToSuperview().inset(left + right)
                     break
                 case .stretch:
                     make.left.equalTo(left)
-                    make.right.equalTo(-right)
+                    make.width.equalToSuperview().inset(left + right).priority(700)
+                    make.width.lessThanOrEqualToSuperview().inset(left + right)
                     break
                 }
             })

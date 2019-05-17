@@ -31,10 +31,10 @@ class ViewController: UIViewController {
         //            UIView(style: [.direction(.column), .left(0), .top(0), .bottom(0), .right(0), .background(.red)])
         //        ]
         self.view <- [
-            UIView(styles: [.direction(.row), .justifyContent(.flexStart), .alignItems(.flexStart), .top(60), .left(0), .background(.gray), .alignSelf(.center)]) <- [
-                UILabel(styles: [.height(50), .top(0), .left(10), .background(.red), .text("测试"), .textAlign(.center)]),
-                UIView(styles: [.width(80), .height(60), .right(20), .background(.blue)]),
-                UILabel(styles: [.width(60), .height(80), .right(5), .background(.red), .text("测试"),.textAlign(.center)])
+            UIView(styles: [.direction(.row), .justifyContent(.flexStart), .alignItems(.flexEnd), .top(60), .left(0), .background(.gray), .alignSelf(.center)]) <- [
+                UILabel(styles: [.height(50), .top(20), .left(20), .background(.red), .text("测试"), .textAlign(.center), .width(80)]),
+                UIView(styles: [.width(90), .height(60), .background(.blue)]),
+                UILabel(styles: [.width(60), .height(80), .right(70),.left(10), .background(.red), .text("测试"),.textAlign(.center), .bottom(30)])
             ],
             UIView(styles: [.alignSelf(.flexEnd), .direction(.row), .justifyContent(.flexStart), .alignItems(.flexStart), .left(0), .background(.gray)]) <- [
                 UILabel(styles: [.height(50), .top(0), .left(10), .background(.red), .text("测试"), .textAlign(.center)]),
