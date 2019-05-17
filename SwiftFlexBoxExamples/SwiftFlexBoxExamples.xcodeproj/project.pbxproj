@@ -32,6 +32,27 @@
 			remoteGlobalIDString = 381531DA228E54DA00EAFBCF;
 			remoteInfo = SwiftFlexBoxExamples;
 		};
+		383448E7228E8B8500B8CF44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 383448E2228E8B8500B8CF44 /* SwiftFlexBox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 38253322228E5278005B7613;
+			remoteInfo = SwiftFlexBox;
+		};
+		383448E9228E8B8500B8CF44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 383448E2228E8B8500B8CF44 /* SwiftFlexBox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3825332B228E5278005B7613;
+			remoteInfo = SwiftFlexBoxTests;
+		};
+		383448EB228E8B9400B8CF44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 383448E2228E8B8500B8CF44 /* SwiftFlexBox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 38253321228E5278005B7613;
+			remoteInfo = SwiftFlexBox;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +83,7 @@
 		381531FA228E54DC00EAFBCF /* SwiftFlexBoxExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFlexBoxExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		381531FE228E54DC00EAFBCF /* SwiftFlexBoxExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFlexBoxExamplesUITests.swift; sourceTree = "<group>"; };
 		38153200228E54DC00EAFBCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		383448E2228E8B8500B8CF44 /* SwiftFlexBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftFlexBox.xcodeproj; path = ../SwiftFlexBox.xcodeproj; sourceTree = "<group>"; };
 		5FC51414F76B523936706915 /* libPods-SwiftFlexBoxExamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFlexBoxExamples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBB4EADF94424F12FC5550D /* Pods-SwiftFlexBoxExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFlexBoxExamples.debug.xcconfig"; path = "Target Support Files/Pods-SwiftFlexBoxExamples/Pods-SwiftFlexBoxExamples.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +117,7 @@
 		381531D2228E54DA00EAFBCF = {
 			isa = PBXGroup;
 			children = (
+				383448E2228E8B8500B8CF44 /* SwiftFlexBox.xcodeproj */,
 				381531DD228E54DA00EAFBCF /* SwiftFlexBoxExamples */,
 				381531F2228E54DC00EAFBCF /* SwiftFlexBoxExamplesTests */,
 				381531FD228E54DC00EAFBCF /* SwiftFlexBoxExamplesUITests */,
@@ -145,6 +168,15 @@
 			path = SwiftFlexBoxExamplesUITests;
 			sourceTree = "<group>";
 		};
+		383448E3228E8B8500B8CF44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				383448E8228E8B8500B8CF44 /* SwiftFlexBox.framework */,
+				383448EA228E8B8500B8CF44 /* SwiftFlexBoxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6311119DE48CEAF880AF7029 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +211,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				383448EC228E8B9400B8CF44 /* PBXTargetDependency */,
 			);
 			name = SwiftFlexBoxExamples;
 			productName = SwiftFlexBoxExamples;
@@ -255,6 +288,12 @@
 			mainGroup = 381531D2228E54DA00EAFBCF;
 			productRefGroup = 381531DC228E54DA00EAFBCF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 383448E3228E8B8500B8CF44 /* Products */;
+					ProjectRef = 383448E2228E8B8500B8CF44 /* SwiftFlexBox.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				381531DA228E54DA00EAFBCF /* SwiftFlexBoxExamples */,
@@ -263,6 +302,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		383448E8228E8B8500B8CF44 /* SwiftFlexBox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftFlexBox.framework;
+			remoteRef = 383448E7228E8B8500B8CF44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		383448EA228E8B8500B8CF44 /* SwiftFlexBoxTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftFlexBoxTests.xctest;
+			remoteRef = 383448E9228E8B8500B8CF44 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		381531D9228E54DA00EAFBCF /* Resources */ = {
@@ -354,6 +410,11 @@
 			isa = PBXTargetDependency;
 			target = 381531DA228E54DA00EAFBCF /* SwiftFlexBoxExamples */;
 			targetProxy = 381531FB228E54DC00EAFBCF /* PBXContainerItemProxy */;
+		};
+		383448EC228E8B9400B8CF44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftFlexBox;
+			targetProxy = 383448EB228E8B9400B8CF44 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
