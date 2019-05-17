@@ -10,6 +10,8 @@
 		3825332C228E5278005B7613 /* SwiftFlexBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38253322228E5278005B7613 /* SwiftFlexBox.framework */; };
 		38253331228E5278005B7613 /* SwiftFlexBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38253330228E5278005B7613 /* SwiftFlexBoxTests.swift */; };
 		38253333228E5278005B7613 /* SwiftFlexBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 38253325228E5278005B7613 /* SwiftFlexBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0D24E18C0C20D859FE20637 /* libPods-SwiftFlexBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 411107D5518685CCA66CBB26 /* libPods-SwiftFlexBox.a */; };
+		F027CA92D2237D167E84B234 /* libPods-SwiftFlexBoxTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD6DAFA12F3B6E601A1930 /* libPods-SwiftFlexBoxTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		344562FB3365BC7114C3C038 /* Pods-SwiftFlexBoxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFlexBoxTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftFlexBoxTests/Pods-SwiftFlexBoxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		38253322228E5278005B7613 /* SwiftFlexBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFlexBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38253325228E5278005B7613 /* SwiftFlexBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftFlexBox.h; sourceTree = "<group>"; };
 		38253326228E5278005B7613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3825332B228E5278005B7613 /* SwiftFlexBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFlexBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38253330228E5278005B7613 /* SwiftFlexBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFlexBoxTests.swift; sourceTree = "<group>"; };
 		38253332228E5278005B7613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411107D5518685CCA66CBB26 /* libPods-SwiftFlexBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFlexBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF0267B210580A883ACB659 /* Pods-SwiftFlexBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFlexBox.debug.xcconfig"; path = "Target Support Files/Pods-SwiftFlexBox/Pods-SwiftFlexBox.debug.xcconfig"; sourceTree = "<group>"; };
+		66DD6DAFA12F3B6E601A1930 /* libPods-SwiftFlexBoxTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFlexBoxTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C568BFE8E00076C8F647F6A0 /* Pods-SwiftFlexBoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFlexBoxTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftFlexBoxTests/Pods-SwiftFlexBoxTests.release.xcconfig"; sourceTree = "<group>"; };
+		C88AD03C8E9D3D1229444659 /* Pods-SwiftFlexBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFlexBox.release.xcconfig"; path = "Target Support Files/Pods-SwiftFlexBox/Pods-SwiftFlexBox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0D24E18C0C20D859FE20637 /* libPods-SwiftFlexBox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3825332C228E5278005B7613 /* SwiftFlexBox.framework in Frameworks */,
+				F027CA92D2237D167E84B234 /* libPods-SwiftFlexBoxTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,8 @@
 				38253324228E5278005B7613 /* SwiftFlexBox */,
 				3825332F228E5278005B7613 /* SwiftFlexBoxTests */,
 				38253323228E5278005B7613 /* Products */,
+				FC32E23527556C30A0AA147C /* Pods */,
+				EB6B3977B2E8E2B05508896D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +98,27 @@
 			path = SwiftFlexBoxTests;
 			sourceTree = "<group>";
 		};
+		EB6B3977B2E8E2B05508896D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				411107D5518685CCA66CBB26 /* libPods-SwiftFlexBox.a */,
+				66DD6DAFA12F3B6E601A1930 /* libPods-SwiftFlexBoxTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC32E23527556C30A0AA147C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BF0267B210580A883ACB659 /* Pods-SwiftFlexBox.debug.xcconfig */,
+				C88AD03C8E9D3D1229444659 /* Pods-SwiftFlexBox.release.xcconfig */,
+				344562FB3365BC7114C3C038 /* Pods-SwiftFlexBoxTests.debug.xcconfig */,
+				C568BFE8E00076C8F647F6A0 /* Pods-SwiftFlexBoxTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38253336228E5278005B7613 /* Build configuration list for PBXNativeTarget "SwiftFlexBox" */;
 			buildPhases = (
+				C17EFDF28F28C129AAF73D5C /* [CP] Check Pods Manifest.lock */,
 				3825331D228E5278005B7613 /* Headers */,
 				3825331E228E5278005B7613 /* Sources */,
 				3825331F228E5278005B7613 /* Frameworks */,
@@ -122,6 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38253339228E5278005B7613 /* Build configuration list for PBXNativeTarget "SwiftFlexBoxTests" */;
 			buildPhases = (
+				EE43446C4ACB9368D5447156 /* [CP] Check Pods Manifest.lock */,
 				38253327228E5278005B7613 /* Sources */,
 				38253328228E5278005B7613 /* Frameworks */,
 				38253329228E5278005B7613 /* Resources */,
@@ -188,6 +223,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C17EFDF28F28C129AAF73D5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftFlexBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE43446C4ACB9368D5447156 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftFlexBoxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3825331E228E5278005B7613 /* Sources */ = {
@@ -340,6 +422,7 @@
 		};
 		38253337228E5278005B7613 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF0267B210580A883ACB659 /* Pods-SwiftFlexBox.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +448,7 @@
 		};
 		38253338228E5278005B7613 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C88AD03C8E9D3D1229444659 /* Pods-SwiftFlexBox.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +474,7 @@
 		};
 		3825333A228E5278005B7613 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 344562FB3365BC7114C3C038 /* Pods-SwiftFlexBoxTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG49RAY3R6;
@@ -408,6 +493,7 @@
 		};
 		3825333B228E5278005B7613 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C568BFE8E00076C8F647F6A0 /* Pods-SwiftFlexBoxTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG49RAY3R6;
