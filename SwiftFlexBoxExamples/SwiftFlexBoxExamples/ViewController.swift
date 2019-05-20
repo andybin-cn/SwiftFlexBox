@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftFlexBox
+import YogaKit
 
 class ViewController: UIViewController {
 
@@ -30,6 +31,9 @@ class ViewController: UIViewController {
         //            ],
         //            UIView(style: [.direction(.column), .left(0), .top(0), .bottom(0), .right(0), .background(.red)])
         //        ]
+        self.view.configureLayout { (layout) in
+            layout.alignContent = .auto
+        }
         self.view <- [
             UIView(styles: [.direction(.row), .justifyContent(.flexStart), .alignItems(.flexEnd), .top(60), .left(0), .background(.gray), .alignSelf(.center)]) <- [
                 UILabel(styles: [.height(50), .top(20), .left(20), .background(.red), .text("测试"), .textAlign(.center), .width(80)]),

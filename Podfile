@@ -10,6 +10,7 @@ target 'SwiftFlexBox' do
 
   # Pods for SwiftFlexBox
   pod 'SnapKit', '~> 5.0.0'
+  pod 'YogaKit', '~> 1.7'
 
   target 'SwiftFlexBoxTests' do
     inherit! :search_paths
@@ -22,5 +23,6 @@ target 'SwiftFlexBoxExamples' do
   project 'SwiftFlexBoxExamples/SwiftFlexBoxExamples.xcodeproj'
 
   pod 'SnapKit', '~> 5.0.0'
+  pod 'YogaKit', '~> 1.7'
 
 end

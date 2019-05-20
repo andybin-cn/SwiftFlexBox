@@ -14,6 +14,10 @@
 		381531E9228E54DC00EAFBCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381531E7228E54DC00EAFBCF /* LaunchScreen.storyboard */; };
 		381531F4228E54DC00EAFBCF /* SwiftFlexBoxExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381531F3228E54DC00EAFBCF /* SwiftFlexBoxExamplesTests.swift */; };
 		381531FF228E54DC00EAFBCF /* SwiftFlexBoxExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381531FE228E54DC00EAFBCF /* SwiftFlexBoxExamplesUITests.swift */; };
+		387BDCC622929E38002F90F4 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCC222929E38002F90F4 /* libc++.1.tbd */; };
+		387BDCC722929E38002F90F4 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCC322929E38002F90F4 /* libc.tbd */; };
+		387BDCC822929E38002F90F4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCC422929E38002F90F4 /* libc++.tbd */; };
+		387BDCC922929E38002F90F4 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCC522929E38002F90F4 /* libc++abi.tbd */; };
 		6FF8A272B08991B05BDE6116 /* libPods-SwiftFlexBoxExamples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC51414F76B523936706915 /* libPods-SwiftFlexBoxExamples.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +88,11 @@
 		381531FE228E54DC00EAFBCF /* SwiftFlexBoxExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFlexBoxExamplesUITests.swift; sourceTree = "<group>"; };
 		38153200228E54DC00EAFBCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		383448E2228E8B8500B8CF44 /* SwiftFlexBox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftFlexBox.xcodeproj; path = ../SwiftFlexBox.xcodeproj; sourceTree = "<group>"; };
+		387BDCB022929C77002F90F4 /* SwiftFlexBoxExamples-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFlexBoxExamples-Bridging-Header.h"; sourceTree = "<group>"; };
+		387BDCC222929E38002F90F4 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		387BDCC322929E38002F90F4 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		387BDCC422929E38002F90F4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		387BDCC522929E38002F90F4 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		5FC51414F76B523936706915 /* libPods-SwiftFlexBoxExamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFlexBoxExamples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBB4EADF94424F12FC5550D /* Pods-SwiftFlexBoxExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFlexBoxExamples.debug.xcconfig"; path = "Target Support Files/Pods-SwiftFlexBoxExamples/Pods-SwiftFlexBoxExamples.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +102,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387BDCC622929E38002F90F4 /* libc++.1.tbd in Frameworks */,
+				387BDCC722929E38002F90F4 /* libc.tbd in Frameworks */,
+				387BDCC822929E38002F90F4 /* libc++.tbd in Frameworks */,
+				387BDCC922929E38002F90F4 /* libc++abi.tbd in Frameworks */,
 				6FF8A272B08991B05BDE6116 /* libPods-SwiftFlexBoxExamples.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +159,7 @@
 				381531E5228E54DC00EAFBCF /* Assets.xcassets */,
 				381531E7228E54DC00EAFBCF /* LaunchScreen.storyboard */,
 				381531EA228E54DC00EAFBCF /* Info.plist */,
+				387BDCB022929C77002F90F4 /* SwiftFlexBoxExamples-Bridging-Header.h */,
 			);
 			path = SwiftFlexBoxExamples;
 			sourceTree = "<group>";
@@ -190,6 +204,10 @@
 		E321477CFFBE9EB7C0B92155 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				387BDCC322929E38002F90F4 /* libc.tbd */,
+				387BDCC222929E38002F90F4 /* libc++.1.tbd */,
+				387BDCC422929E38002F90F4 /* libc++.tbd */,
+				387BDCC522929E38002F90F4 /* libc++abi.tbd */,
 				5FC51414F76B523936706915 /* libPods-SwiftFlexBoxExamples.a */,
 			);
 			name = Frameworks;
@@ -266,6 +284,7 @@
 				TargetAttributes = {
 					381531DA228E54DA00EAFBCF = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					381531EE228E54DC00EAFBCF = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -559,6 +578,7 @@
 			baseConfigurationReference = CCBB4EADF94424F12FC5550D /* Pods-SwiftFlexBoxExamples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG49RAY3R6;
 				INFOPLIST_FILE = SwiftFlexBoxExamples/Info.plist;
@@ -568,6 +588,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.andy.bin.SwiftFlexBoxExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftFlexBoxExamples/SwiftFlexBoxExamples-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -578,6 +600,7 @@
 			baseConfigurationReference = 08A8F6A62CF1C0CEED140FE5 /* Pods-SwiftFlexBoxExamples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG49RAY3R6;
 				INFOPLIST_FILE = SwiftFlexBoxExamples/Info.plist;
@@ -587,6 +610,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.andy.bin.SwiftFlexBoxExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftFlexBoxExamples/SwiftFlexBoxExamples-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

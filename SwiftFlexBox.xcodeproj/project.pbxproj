@@ -10,6 +10,10 @@
 		3825332C228E5278005B7613 /* SwiftFlexBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38253322228E5278005B7613 /* SwiftFlexBox.framework */; };
 		38253331228E5278005B7613 /* SwiftFlexBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38253330228E5278005B7613 /* SwiftFlexBoxTests.swift */; };
 		38253333228E5278005B7613 /* SwiftFlexBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 38253325228E5278005B7613 /* SwiftFlexBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		387BDCBA22929DC1002F90F4 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCB922929DC1002F90F4 /* libc.tbd */; };
+		387BDCBE22929DCC002F90F4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCBB22929DCC002F90F4 /* libc++.tbd */; };
+		387BDCBF22929DCC002F90F4 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCBC22929DCC002F90F4 /* libc++abi.tbd */; };
+		387BDCC022929DCC002F90F4 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCBD22929DCC002F90F4 /* libc++.1.tbd */; };
 		38C4A5B2228E5B1B0071A8AA /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4A5AD228E5B1B0071A8AA /* ImageStyle.swift */; };
 		38C4A5B3228E5B1B0071A8AA /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4A5AE228E5B1B0071A8AA /* TextStyle.swift */; };
 		38C4A5B4228E5B1B0071A8AA /* Flexbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4A5AF228E5B1B0071A8AA /* Flexbox.swift */; };
@@ -37,6 +41,10 @@
 		3825332B228E5278005B7613 /* SwiftFlexBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFlexBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38253330228E5278005B7613 /* SwiftFlexBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFlexBoxTests.swift; sourceTree = "<group>"; };
 		38253332228E5278005B7613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		387BDCB922929DC1002F90F4 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		387BDCBB22929DCC002F90F4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		387BDCBC22929DCC002F90F4 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		387BDCBD22929DCC002F90F4 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		38C4A5AD228E5B1B0071A8AA /* ImageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
 		38C4A5AE228E5B1B0071A8AA /* TextStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		38C4A5AF228E5B1B0071A8AA /* Flexbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flexbox.swift; sourceTree = "<group>"; };
@@ -54,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387BDCBE22929DCC002F90F4 /* libc++.tbd in Frameworks */,
+				387BDCBF22929DCC002F90F4 /* libc++abi.tbd in Frameworks */,
+				387BDCC022929DCC002F90F4 /* libc++.1.tbd in Frameworks */,
+				387BDCBA22929DC1002F90F4 /* libc.tbd in Frameworks */,
 				E0D24E18C0C20D859FE20637 /* libPods-SwiftFlexBox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +136,10 @@
 		EB6B3977B2E8E2B05508896D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				387BDCBD22929DCC002F90F4 /* libc++.1.tbd */,
+				387BDCBB22929DCC002F90F4 /* libc++.tbd */,
+				387BDCBC22929DCC002F90F4 /* libc++abi.tbd */,
+				387BDCB922929DC1002F90F4 /* libc.tbd */,
 				411107D5518685CCA66CBB26 /* libPods-SwiftFlexBox.a */,
 				66DD6DAFA12F3B6E601A1930 /* libPods-SwiftFlexBoxTests.a */,
 			);
@@ -205,6 +221,7 @@
 				TargetAttributes = {
 					38253321228E5278005B7613 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					3825332A228E5278005B7613 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -451,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BF0267B210580A883ACB659 /* Pods-SwiftFlexBox.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -468,6 +486,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andy.bin.SwiftFlexBox;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -477,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C88AD03C8E9D3D1229444659 /* Pods-SwiftFlexBox.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
