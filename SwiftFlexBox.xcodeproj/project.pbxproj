@@ -12,6 +12,9 @@
 		36747A8C22A116AF00FE66B9 /* StyleValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747A8B22A116AF00FE66B9 /* StyleValues.swift */; };
 		36747A8E22A11CBA00FE66B9 /* StyleEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747A8D22A11CBA00FE66B9 /* StyleEnums.swift */; };
 		36747A9122A1258300FE66B9 /* UIView+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747A9022A1258300FE66B9 /* UIView+Styles.swift */; };
+		36747A9322A1271000FE66B9 /* UILabel+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747A9222A1271000FE66B9 /* UILabel+Styles.swift */; };
+		36747A9522A1278A00FE66B9 /* UITextField+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747A9422A1278A00FE66B9 /* UITextField+Styles.swift */; };
+		36747A9722A1284300FE66B9 /* UIImageView+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36747A9622A1284300FE66B9 /* UIImageView+Styles.swift */; };
 		3825332C228E5278005B7613 /* SwiftFlexBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38253322228E5278005B7613 /* SwiftFlexBox.framework */; };
 		38253331228E5278005B7613 /* SwiftFlexBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38253330228E5278005B7613 /* SwiftFlexBoxTests.swift */; };
 		38253333228E5278005B7613 /* SwiftFlexBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 38253325228E5278005B7613 /* SwiftFlexBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +48,9 @@
 		36747A8B22A116AF00FE66B9 /* StyleValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleValues.swift; sourceTree = "<group>"; };
 		36747A8D22A11CBA00FE66B9 /* StyleEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleEnums.swift; sourceTree = "<group>"; };
 		36747A9022A1258300FE66B9 /* UIView+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Styles.swift"; sourceTree = "<group>"; };
+		36747A9222A1271000FE66B9 /* UILabel+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Styles.swift"; sourceTree = "<group>"; };
+		36747A9422A1278A00FE66B9 /* UITextField+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Styles.swift"; sourceTree = "<group>"; };
+		36747A9622A1284300FE66B9 /* UIImageView+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Styles.swift"; sourceTree = "<group>"; };
 		38253322228E5278005B7613 /* SwiftFlexBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFlexBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38253325228E5278005B7613 /* SwiftFlexBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftFlexBox.h; sourceTree = "<group>"; };
 		38253326228E5278005B7613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				36747A9022A1258300FE66B9 /* UIView+Styles.swift */,
+				36747A9222A1271000FE66B9 /* UILabel+Styles.swift */,
+				36747A9422A1278A00FE66B9 /* UITextField+Styles.swift */,
+				36747A9622A1284300FE66B9 /* UIImageView+Styles.swift */,
 			);
 			path = StyleExtensions;
 			sourceTree = "<group>";
@@ -338,10 +347,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36747A9322A1271000FE66B9 /* UILabel+Styles.swift in Sources */,
 				38C4A5B3228E5B1B0071A8AA /* TextStyle.swift in Sources */,
 				36747A8822A112A700FE66B9 /* Style.swift in Sources */,
 				36747A9122A1258300FE66B9 /* UIView+Styles.swift in Sources */,
+				36747A9722A1284300FE66B9 /* UIImageView+Styles.swift in Sources */,
 				38C4A5B5228E5B1B0071A8AA /* ConstraintMaker.swift in Sources */,
+				36747A9522A1278A00FE66B9 /* UITextField+Styles.swift in Sources */,
 				36747A8C22A116AF00FE66B9 /* StyleValues.swift in Sources */,
 				38C4A5B2228E5B1B0071A8AA /* ImageStyle.swift in Sources */,
 				38C4A5B6228E5B1B0071A8AA /* ViewStyle.swift in Sources */,
