@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SwiftFlexBoxExamples/SwiftFlexBoxExamples.xcodeproj">
+      location = "group:SwiftFlexBox.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:SwiftFlexBox.xcodeproj">
+      location = "group:SwiftFlexBoxExamples/SwiftFlexBoxExamples.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

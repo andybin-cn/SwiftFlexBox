@@ -1,24 +1,20 @@
 PODS:
-  - SnapKit (5.0.0)
   - Yoga (1.14.0)
   - YogaKit (1.14.0):
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
-  - SnapKit (~> 5.0.0)
   - YogaKit (~> 1.7)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - SnapKit
     - Yoga
     - YogaKit
 
 SPEC CHECKSUMS:
-  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
   YogaKit: 5d1dc899cecd5946e5a758a0c3997704a4b48d01
 
-PODFILE CHECKSUM: 0170e7bc3325021a1dbad15ac72356abd00ff745
+PODFILE CHECKSUM: 8279ccba172b7d3975deeba74977081868551dc8
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.1

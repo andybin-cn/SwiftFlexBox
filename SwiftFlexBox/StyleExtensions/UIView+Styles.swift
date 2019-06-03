@@ -14,4 +14,10 @@ extension Style where Base: UIView {
         self.base.backgroundColor = color
         return self
     }
+    
+    @discardableResult
+    public func ref(_ ref: inout Base?) -> Style {
+        ref = base
+        return self
+    }
 }

@@ -15,6 +15,16 @@ extension Style where Base: UIView {
         return base.yoga
     }
     
+    public func layout(mode: LayoutMode = .fitContainer) -> Base {
+        self.yoga.isEnabled = true
+        if case .fitContainer = mode {
+            yoga.applyLayout(preservingOrigin: true)
+        } else {
+            yoga.applyLayout(preservingOrigin: true, dimensionFlexibility: mode == .adjustWidth ? YGDimensionFlexibility.flexibleWidth : YGDimensionFlexibility.flexibleHeight)
+        }
+        return base
+    }
+    
     //MARK: - Flex Basic
 
     @discardableResult

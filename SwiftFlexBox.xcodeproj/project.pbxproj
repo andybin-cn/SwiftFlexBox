@@ -22,11 +22,7 @@
 		387BDCBE22929DCC002F90F4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCBB22929DCC002F90F4 /* libc++.tbd */; };
 		387BDCBF22929DCC002F90F4 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCBC22929DCC002F90F4 /* libc++abi.tbd */; };
 		387BDCC022929DCC002F90F4 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 387BDCBD22929DCC002F90F4 /* libc++.1.tbd */; };
-		38C4A5B2228E5B1B0071A8AA /* ImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4A5AD228E5B1B0071A8AA /* ImageStyle.swift */; };
-		38C4A5B3228E5B1B0071A8AA /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4A5AE228E5B1B0071A8AA /* TextStyle.swift */; };
 		38C4A5B4228E5B1B0071A8AA /* Flexbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4A5AF228E5B1B0071A8AA /* Flexbox.swift */; };
-		38C4A5B5228E5B1B0071A8AA /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4A5B0228E5B1B0071A8AA /* ConstraintMaker.swift */; };
-		38C4A5B6228E5B1B0071A8AA /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4A5B1228E5B1B0071A8AA /* ViewStyle.swift */; };
 		E0D24E18C0C20D859FE20637 /* libPods-SwiftFlexBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 411107D5518685CCA66CBB26 /* libPods-SwiftFlexBox.a */; };
 		F027CA92D2237D167E84B234 /* libPods-SwiftFlexBoxTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD6DAFA12F3B6E601A1930 /* libPods-SwiftFlexBoxTests.a */; };
 /* End PBXBuildFile section */
@@ -61,11 +57,7 @@
 		387BDCBB22929DCC002F90F4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		387BDCBC22929DCC002F90F4 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		387BDCBD22929DCC002F90F4 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
-		38C4A5AD228E5B1B0071A8AA /* ImageStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStyle.swift; sourceTree = "<group>"; };
-		38C4A5AE228E5B1B0071A8AA /* TextStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
-		38C4A5AF228E5B1B0071A8AA /* Flexbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flexbox.swift; sourceTree = "<group>"; };
-		38C4A5B0228E5B1B0071A8AA /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
-		38C4A5B1228E5B1B0071A8AA /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
+		38C4A5AF228E5B1B0071A8AA /* Flexbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flexbox.swift; path = source/Flexbox.swift; sourceTree = "<group>"; };
 		411107D5518685CCA66CBB26 /* libPods-SwiftFlexBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFlexBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF0267B210580A883ACB659 /* Pods-SwiftFlexBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFlexBox.debug.xcconfig"; path = "Target Support Files/Pods-SwiftFlexBox/Pods-SwiftFlexBox.debug.xcconfig"; sourceTree = "<group>"; };
 		66DD6DAFA12F3B6E601A1930 /* libPods-SwiftFlexBoxTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftFlexBoxTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,13 +125,13 @@
 			isa = PBXGroup;
 			children = (
 				36747A8F22A1256800FE66B9 /* StyleExtensions */,
-				38C4A5AC228E5B1B0071A8AA /* source */,
 				38253325228E5278005B7613 /* SwiftFlexBox.h */,
-				38253326228E5278005B7613 /* Info.plist */,
+				38C4A5AF228E5B1B0071A8AA /* Flexbox.swift */,
 				36747A8722A112A700FE66B9 /* Style.swift */,
 				36747A8922A1155D00FE66B9 /* FlexBoxStyles.swift */,
 				36747A8B22A116AF00FE66B9 /* StyleValues.swift */,
 				36747A8D22A11CBA00FE66B9 /* StyleEnums.swift */,
+				38253326228E5278005B7613 /* Info.plist */,
 			);
 			path = SwiftFlexBox;
 			sourceTree = "<group>";
@@ -151,18 +143,6 @@
 				38253332228E5278005B7613 /* Info.plist */,
 			);
 			path = SwiftFlexBoxTests;
-			sourceTree = "<group>";
-		};
-		38C4A5AC228E5B1B0071A8AA /* source */ = {
-			isa = PBXGroup;
-			children = (
-				38C4A5AF228E5B1B0071A8AA /* Flexbox.swift */,
-				38C4A5B0228E5B1B0071A8AA /* ConstraintMaker.swift */,
-				38C4A5B1228E5B1B0071A8AA /* ViewStyle.swift */,
-				38C4A5AE228E5B1B0071A8AA /* TextStyle.swift */,
-				38C4A5AD228E5B1B0071A8AA /* ImageStyle.swift */,
-			);
-			path = source;
 			sourceTree = "<group>";
 		};
 		EB6B3977B2E8E2B05508896D /* Frameworks */ = {
@@ -348,15 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				36747A9322A1271000FE66B9 /* UILabel+Styles.swift in Sources */,
-				38C4A5B3228E5B1B0071A8AA /* TextStyle.swift in Sources */,
 				36747A8822A112A700FE66B9 /* Style.swift in Sources */,
 				36747A9122A1258300FE66B9 /* UIView+Styles.swift in Sources */,
 				36747A9722A1284300FE66B9 /* UIImageView+Styles.swift in Sources */,
-				38C4A5B5228E5B1B0071A8AA /* ConstraintMaker.swift in Sources */,
 				36747A9522A1278A00FE66B9 /* UITextField+Styles.swift in Sources */,
 				36747A8C22A116AF00FE66B9 /* StyleValues.swift in Sources */,
-				38C4A5B2228E5B1B0071A8AA /* ImageStyle.swift in Sources */,
-				38C4A5B6228E5B1B0071A8AA /* ViewStyle.swift in Sources */,
 				36747A8E22A11CBA00FE66B9 /* StyleEnums.swift in Sources */,
 				38C4A5B4228E5B1B0071A8AA /* Flexbox.swift in Sources */,
 				36747A8A22A1155D00FE66B9 /* FlexBoxStyles.swift in Sources */,

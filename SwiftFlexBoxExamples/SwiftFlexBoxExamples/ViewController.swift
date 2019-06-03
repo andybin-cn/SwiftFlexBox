@@ -8,48 +8,59 @@
 
 import UIKit
 import SwiftFlexBox
-import YogaKit
 
 class ViewController: UIViewController {
     
+    var ref: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        var ref: UILabel!
-        // Do any additional setup after loading the view.
-        //        let v1 = UIView(position: nil, subView: nil)
-        //        UIView(configs: (position: CGPoint.zero))
-        //            <- UIView()
-        //                <- [
-        //                    UIView(),
-        //                    UIView()
-        //                ]
-        //
-        //        self.view <- [
-        //            UIView(style: [.direction(.column), .left(0), .top(0), .bottom(0), .right(0), .background(.red)]) <- [
-        //                UIView(style: [.top(40),.bottom(30), .background(.yellow)]),
-        //                UIView(style: [.left(20), .top(40), .right(10), .bottom(30), .background(.blue)])
-        //            ],
-        //            UIView(style: [.direction(.column), .left(0), .top(0), .bottom(0), .right(0), .background(.red)])
-        //        ]
-        self.view.configureLayout { (layout) in
-            layout.alignContent = .auto
-        }
+        
+        
         self.view <- [
-            UIView(styles: [.direction(.row), .justifyContent(.flexStart), .alignItems(.flexEnd), .top(60), .left(0), .background(.gray), .alignSelf(.center)]) <- [
-                UILabel(styles: [.height(50), .top(20), .left(20), .background(.red), .text("测试"), .textAlign(.center), .width(80)]),
-                UIView(styles: [.width(90), .height(60), .background(.blue)]),
-                UILabel(styles: [.width(60), .height(80), .right(70),.left(10), .background(.red), .text("测试"),.textAlign(.center), .bottom(30)])
-            ],
-            UIView(styles: [.alignSelf(.flexEnd), .direction(.row), .justifyContent(.flexStart), .alignItems(.flexStart), .left(0), .background(.gray)]) <- [
-                UILabel(styles: [.height(50), .top(0), .left(10), .background(.red), .text("测试"), .textAlign(.center)]),
-                UIView(styles: [.width(80), .height(60), .right(20), .background(.blue)]),
-                UILabel(styles: [.width(60), .height(80), .right(5), .background(.red), .text("测试"),.textAlign(.center)])
+            UIView().style
+                .justifyContent(.center)
+                .direction(.column)
+                .alignItems(.center)
+                .marginTop(100)
+                .backgroundColor(.gray).layout()
+            <- [
+                UIView().style
+                    .direction(.row)
+                    .justifyContent(.start)
+                    .height(20)
+                    .width(30)
+                    .marginTop(100)
+                    .backgroundColor(.red).layout(),
+                UIButton().style
+                    .ref(&ref)
+                    .marginTop(10)
+                    .height(35)
+                    .width(100)
+                    .backgroundColor(.blue).layout(),
+                UIView().style
+                    .direction(.row)
+                    .justifyContent(.start)
+                    .height(40)
+                    .width(70)
+                    .backgroundColor(.yellow).layout(),
+                
             ]
         ]
         
-        //        print("ref.text:\(String(describing: ref.text))")
+        ref.addTarget(self, action: #selector(onTapped), for: .touchUpInside)
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.view.style.layout()
+    }
+    
+    
+    @objc func onTapped() {
+        self.view.style.layout()
+        self.ref.style.marginTop(100).backgroundColor(.green).layout()
+    }
     
     
 }

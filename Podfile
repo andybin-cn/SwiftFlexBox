@@ -9,7 +9,6 @@ target 'SwiftFlexBox' do
   # use_frameworks!
 
   # Pods for SwiftFlexBox
-  pod 'SnapKit', '~> 5.0.0'
   pod 'YogaKit', '~> 1.7'
 
   target 'SwiftFlexBoxTests' do
@@ -21,8 +20,5 @@ end
 
 target 'SwiftFlexBoxExamples' do
   project 'SwiftFlexBoxExamples/SwiftFlexBoxExamples.xcodeproj'
-
-  pod 'SnapKit', '~> 5.0.0'
-  pod 'YogaKit', '~> 1.7'
 
 end
